@@ -8,3 +8,19 @@
 # 10.times do
 #   Restaurant.create(name: Faker::Beer.name, adress: Faker::Beer.hop)
 # end
+Restaurant.destroy_all
+
+Restaurant.create(name: "america",
+                  address: "Av Paulista",
+                  phone_number: "11234321",
+                  category: "French")
+
+Restaurant.create(name: "Braz",
+                  address: "Av Faria Lima",
+                  phone_number: "11234321",
+                  category: "Italian")
+
+Restaurant.create(name: "Angelica",
+                  address: "5th Ave",
+                  phone_number: "11234321",
+                  category: "chinese")
